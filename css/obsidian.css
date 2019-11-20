@@ -1,14 +1,14 @@
 :root {
   --font-color: #000;
   --night-font-color: #ddd;
-  --primary: #b2fefa;
-  --secondary: #0ed2f7;
-  --dark: #0052d4;
-  --gradient-light: #5d9eea;
-  --gradient-middle: #0f27b5;
+  --primary: #ffb199;
+  --secondary: #ff0844;
+  --dark: #ff3969;
+  --gradient-light: #ff0844;
+  --gradient-middle: #ff0844;
   --gradient-dark: #100e17;
-  --code-gradient-light: #cff0ff;
-  --code-gradient-dark: #afcafd;
+  --code-gradient-light: #ffb199;
+  --code-gradient-dark: #ffb199;
   --maxwidth: 1284px;
 }
 .gradient-text {
@@ -151,8 +151,8 @@ h5 a,
 h6 a {
   font-weight: 600;
   background: #b2fefa !important;
-  background: -webkit-linear-gradient(to right, #b2fefa, #0ed2f7, #0052d4) !important;
-  background: linear-gradient(to right, #b2fefa, #0ed2f7, #0052d4) !important;
+  background: -webkit-linear-gradient(to right, #ffb199, #ff4c77, #ff0844) !important;
+  background: linear-gradient(to right, #ffb199, #ff4c77, #ff0844) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   -webkit-box-decoration-break: clone !important;
