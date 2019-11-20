@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="zh" class="loading">
+<html lang="zh-CN" class="loading">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
-    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="keywords" content="ZEIR,走心叁次方，轻芯空间，qcs，qincore space,"> 
     
     <meta name="author" content="ZEIR"> 
     <link rel="alternative" href="atom.xml" title="走心叁次方ZEIR" type="application/atom+xml"> 
@@ -55,13 +55,13 @@
                                     <div class="timeline-info"></div>
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
-                                        <h2 class="timeline-title">November 2019</h2>
+                                        <h2 class="timeline-title">十一月 2019</h2>
                                     </div>
                                 </li>
                                 
                                 <li class="timeline-item">
                                     <div class="timeline-info">
-                                        <span class="gradient-text">November 20, 2019</span>
+                                        <span class="gradient-text">十一月 20, 2019</span>
                                     </div>
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
@@ -160,9 +160,6 @@ Qu...
 
 
 
-    <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
-    <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/plugin.js"></script>
 <script src="/js/obsidian.js"></script>
@@ -191,15 +188,6 @@ Qu...
     <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
 
 
-
-    <script src="/js/busuanzi.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            if ($('span[id^="busuanzi_"]').length) {
-                initialBusuanzi();
-            }
-        });
-    </script>
 
 
 <link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
@@ -276,7 +264,7 @@ Qu...
         var typedTextEl = $('.typed-text');
         if (typedTextEl && typedTextEl.length > 0) {
             var typed = new Typed('.typed-text', {
-                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
+                strings: ["Recognize the essence of life and still love life.", "认清生活的本质，依然热爱生活。"],
                 typeSpeed: 90,
                 loop: true,
                 loopCount: Infinity,
@@ -292,6 +280,38 @@ Qu...
     }
 </script>
 
+
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script>
+
+        var valine = new Valine();
+
+        function initValine(path) {
+            if (!path) path = window.location.pathname;
+            let language = 'zh-CN';
+            if (!language) {
+                language = 'en';
+            } else {
+                language = language.toLowerCase();
+            }
+            valine.init({
+                el: '#vcomments',
+                appId: 'vaJFQeIRC5wvxXO07qok4PDJ-gzGzoHsz',
+                appKey: 'JtfN3walPwrfxcE4R8LhSmJ5',
+                notify: 'false',
+                verify: 'false',
+                avatar: 'mp',
+                placeholder: '留下你的评论~',
+                visitor: 'true',
+                path: path,
+                lang: language
+            });
+        }
+
+        $(document).ready(function () {
+            initValine();
+        });
+    </script>
 
 
 
